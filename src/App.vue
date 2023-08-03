@@ -1,26 +1,15 @@
 <template>
-   <Estudiante/>
-  <hr>
-  <GuardaEstudiante />
-  <hr />
-  <ActualizarEstudiante />
-  <hr />
-  <EliminarEstudiante />
- 
+  <NavBar />
+  <router-view />
 </template>
 
 <script>
-import GuardaEstudiante from "./modules/estudiante/pages/GuardaEstudiante.vue";
-import Estudiante from "./modules/estudiante/pages/ConsultaEstudiante.vue";
-import ActualizarEstudiante from "./modules/estudiante/pages/ActualizarEstudiante.vue";
-import EliminarEstudiante from "./modules/estudiante/pages/EliminarEstudiante.vue";
+import NavBar from "./modules/estudiante/components/NavBar.vue";
+
 export default {
   name: "App",
   components: {
-    Estudiante,
-    GuardaEstudiante,
-    ActualizarEstudiante,
-    EliminarEstudiante
+    NavBar,
   },
 };
 </script>
@@ -33,5 +22,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body{
+  background: #E0E0CE;
 }
 </style>

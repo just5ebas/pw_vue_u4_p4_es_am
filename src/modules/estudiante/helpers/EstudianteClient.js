@@ -12,8 +12,8 @@ export const actualizarEstudianteFachada = (bodyEstudiante, id) => {
   actualizarEstudiante(bodyEstudiante, id);
 };
 
-export const eliminarEstudianteFachada = (id) => {
-  eliminarEstudiante(id);
+export const eliminarEstudianteFachada = async (id) => {
+  return eliminarEstudiante(id);
 };
 
 const obtenerEstudianteAPI = async (cedula) => {
