@@ -4,8 +4,8 @@ export const obtenerEstudianteFachada = async (cedula) => {
   return await obtenerEstudianteAPIAxios(cedula);
 };
 
-export const ingresarEstudianteFachada = (bodyEstudiante) => {
-  ingresarEstudiante(bodyEstudiante)
+export const ingresarEstudianteFachada = async (bodyEstudiante) => {
+  await ingresarEstudiante(bodyEstudiante)
 };
 
 export const actualizarEstudianteFachada = (bodyEstudiante, id) => {
@@ -33,8 +33,8 @@ const obtenerEstudianteAPIAxios = async(cedula)  => {
 
 };
 
-const ingresarEstudiante = (bodyEstudiante) => {
-  axios.post(`http://localhost:8080/API/1.0/Matricula/estudiantes`,bodyEstudiante).then(r=>r.data);
+const ingresarEstudiante = async(bodyEstudiante) => {
+   axios.post(`http://localhost:8080/API/1.0/Matricula/estudiantes`,bodyEstudiante).then(r=>r.data);
 };
 
 const actualizarEstudiante= (bodyEstudiante, id)=>{

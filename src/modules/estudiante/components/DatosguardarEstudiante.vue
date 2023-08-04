@@ -37,10 +37,10 @@ export default {
         provincia: "Pichincha",
       };
 
-      ingresarEstudianteFachada(data);
+      await ingresarEstudianteFachada(data);
 
       this.reiniciar();
-
+      console.log("Estudiante Resgistrado")
       alert("Estudiante registrado");
     },
     reiniciar() {
