@@ -3,17 +3,47 @@
     <h1>Ingresa los datos del nuevo estudiante</h1>
     <div class="peticion">
       <label for="">Cedula</label>
-      <input v-model="cedula" type="text" />
+      <input
+        v-model="cedula"
+        type="text"
+        class="form-control"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default"
+      />
       <label for="">Nombre</label>
-      <input v-model="nombre" type="text" />
+      <input
+        v-model="nombre"
+        type="text"
+        class="form-control"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default"
+      />
       <label for="">Apellido</label>
-      <input v-model="apellido" type="text" />
+      <input
+        v-model="apellido"
+        type="text"
+        class="form-control"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default"
+      />
       <label for="">Fecha de Nacimiento</label>
-      <input v-model="fechaNacimiento" type="datetime-local" />
+      <input
+        v-model="fechaNacimiento"
+        type="datetime-local"
+        class="form-control"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default"
+      />
     </div>
-
-    <button @click="guardarEstudiante">Guardar</button>
   </div>
+
+  <button
+    class="btn btn-secondary"
+    style="margin-top: 10px"
+    @click="guardarEstudiante"
+  >
+    Guardar
+  </button>
 </template>
 
 <script>
@@ -40,7 +70,7 @@ export default {
       await ingresarEstudianteFachada(data);
 
       this.reiniciar();
-      console.log("Estudiante Resgistrado")
+      console.log("Estudiante Resgistrado");
       alert("Estudiante registrado");
     },
     reiniciar() {
@@ -70,7 +100,7 @@ h1 {
 }
 
 .principal {
-  background: #001c55;
+  background: #362c28;
   color: white;
   margin: 10px 400px;
   padding: 20px;
@@ -99,7 +129,7 @@ h1 {
   border: 4px outset #a6e1fa;
 
   font-size: 15px;
-  background: #0c488d;
+  background: #362c28;
 
   font-weight: bold;
   color: white;
@@ -113,7 +143,7 @@ h1 {
 }
 
 .principal button:active {
-  background: #0e6ba8;
+  background: #362c28;
   border: 4px inset #0e6ba8;
 }
 </style>

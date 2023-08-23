@@ -78,7 +78,7 @@ div * {
 }
 
 .principal {
-  background: #001c55;
+  background: #362C28;
   color: white;
   margin: 10px 400px;
   padding: 20px;
@@ -101,7 +101,7 @@ div * {
   border: 4px outset #a6e1fa;
 
   font-size: 15px;
-  background: #0c488d;
+  background: #362C28;
 
   font-weight: bold;
   color: white;
@@ -120,7 +120,7 @@ div * {
 }
 
 .secundaria {
-  background: #001c55;
+  background: #362C28;
   margin: 30px 500px;
   padding: 20px;
 

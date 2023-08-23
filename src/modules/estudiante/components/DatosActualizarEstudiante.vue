@@ -76,7 +76,7 @@ h1 {
 }
 
 .principal {
-  background: #001c55;
+  background: #362C28;
   color: white;
   margin: 10px 400px;
   padding: 20px;
@@ -105,7 +105,7 @@ h1 {
   border: 4px outset #a6e1fa;
 
   font-size: 15px;
-  background: #0c488d;
+  background: #362C28;
 
   font-weight: bold;
   color: white;

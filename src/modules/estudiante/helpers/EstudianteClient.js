@@ -1,7 +1,7 @@
 import axios from "axios";
 
-export const obtenerEstudianteFachada = async (cedula) => {
-  return await obtenerEstudianteAPIAxios(cedula);
+export const obtenerEstudianteFachada = async (cedula, token) => {
+  return await obtenerEstudianteAPIAxios(cedula, token);
 };
 
 export const ingresarEstudianteFachada = async (bodyEstudiante) => {
@@ -24,10 +24,10 @@ const obtenerEstudianteAPI = async (cedula) => {
   return data;
 };
 
-const obtenerEstudianteAPIAxios = async (cedula) => {
+const obtenerEstudianteAPIAxios = async (cedula, token) => {
   // En el config enviaremos todas los datos de cabecera que quisieramos enviar
   const headers = {
-    "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhc2FzIiwiaWF0IjoxNjkyNzUwNDI2LCJleHAiOjE2OTI3NTE2MjZ9.z8ske0zt-YvjQqwlhX_Hcp8T9ri6dAmJMumAoP6Tyx1Wpgnr00uXhWAmEGmCv_BHyZS9U15pyrEZmZ_PnmSkaA",
+    "Authorization": `Bearer ${token}`,
     "Mensaje": "valor1"
   }
 
