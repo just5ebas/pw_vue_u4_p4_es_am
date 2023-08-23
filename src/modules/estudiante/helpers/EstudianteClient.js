@@ -37,9 +37,9 @@ const obtenerEstudianteAPIAxios = async (cedula) => {
 
 };
 
-const ingresarEstudiante = async (bodyEstudiante) => {
+const ingresarEstudiante = async (bodyEstudiante , token) => {
   const headers = {
-    "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJFcmljayIsImlhdCI6MTY5Mjc0ODY0NSwiZXhwIjoxNjkyNzc4NjQ1fQ.5XV_ndXbVG-cF5NwtlWkDy5jHcPr762HEaBY5856OJP-W8OHk6WvDpguwzMMgQ64lN8zFbKopuZpwHk8dL4IvA",
+    "Authorization": "Bearer "+token,
     "Mensaje": "Valor1"
   }
 

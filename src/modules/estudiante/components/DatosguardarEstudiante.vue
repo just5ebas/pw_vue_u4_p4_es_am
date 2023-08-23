@@ -12,8 +12,9 @@
       <input v-model="fechaNacimiento" type="datetime-local" />
     </div>
 
-    <button @click="guardarEstudiante">Guardar</button>
+    
   </div>
+  <button class="btn btn-danger" @click="guardarEstudiante">Guardar</button>
 </template>
 
 <script>
@@ -52,6 +53,8 @@ export default {
   },
 };
 </script>
+
+
 
 <style scoped>
 .peticion {
